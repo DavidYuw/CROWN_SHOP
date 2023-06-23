@@ -20,13 +20,14 @@ import {
   getDocs,
 } from 'firebase/firestore';
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: "AIzaSyDtiLsvUngYDNitezLLff3jlzWUn4WL5Nc",
+  authDomain: "crwn-clothing-db-111d9.firebaseapp.com",
+  projectId: "crwn-clothing-db-111d9",
+  storageBucket: "crwn-clothing-db-111d9.appspot.com",
+  messagingSenderId: "28611360834",
+  appId: "1:28611360834:web:8f8baf30391fd3be8bd5db"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -102,7 +103,9 @@ export const createUserDocumentFromAuth = async (
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
 
-  return await createUserWithEmailAndPassword(auth, email, password);
+  const rst =  await createUserWithEmailAndPassword(auth, email, password);
+  console.log(rst)
+  return rst
 };
 
 export const signInAuthUserWithEmailAndPassword = async (email, password) => {
