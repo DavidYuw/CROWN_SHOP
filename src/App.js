@@ -8,6 +8,8 @@ import Navigation from './routes/navigation/navigation.component';
 import Authentication from './routes/authentication/authentication.component';
 import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
+import About from './components/about/about.component';
+import Resume from './components/resume/resume.component';
 import { checkUserSession } from './store/user/user.action';
 
 const App = () => {
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='shop/*' element={<Shop />} />
         <Route path='auth' element={<Authentication />} />
         <Route path='checkout' element={<Checkout />} />
+        <Route path='resume' element={<Resume />} />
+        <Route path='about' element={<About />} />
       </Route>
     </Routes>
   );

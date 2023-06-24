@@ -32,6 +32,7 @@ const Navigation = () => {
           <CrwnLogo className='logo' />
         </LogoContainer>
         <NavLinks>
+
           <NavLink to='/shop'>SHOP</NavLink>
 
           {currentUser ? (
@@ -41,6 +42,9 @@ const Navigation = () => {
           ) : (
             <NavLink to='/auth'>SIGN IN</NavLink>
           )}
+
+          <NavLink to='/resume'>RESUME</NavLink>
+          <NavLink to='/about'>ABOUT DEMO PRJ</NavLink>
           <CartIcon />
         </NavLinks>
         {isCartOpen && <CartDropdown />}
