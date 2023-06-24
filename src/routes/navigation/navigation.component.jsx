@@ -43,8 +43,9 @@ const Navigation = () => {
             <NavLink to='/auth'>SIGN IN</NavLink>
           )}
 
-          <NavLink to='/resume'>RESUME</NavLink>
           <NavLink to='/about'>ABOUT DEMO PRJ</NavLink>
+          <NavLink to='/resume'>RESUME</NavLink>
+
           <CartIcon />
         </NavLinks>
         {isCartOpen && <CartDropdown />}
